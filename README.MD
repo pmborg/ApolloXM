@@ -1,5 +1,49 @@
 # [2] ApolloXM (Earth → Mars → Earth)
 
+# ApolloXM — Mars Mission Architecture
+
+ApolloXM is the Mars extension of the ApolloX project.
+
+While ApolloX focuses on lunar missions, ApolloXM explores
+a realistic, staged Mars architecture based on the same core principles:
+
+- payload before crew,
+- return capability before departure,
+- mass efficiency over spectacle,
+- mission logic over brute force.
+
+This repository defines the spacecraft, staging, and mission flow.
+Automation (KOS) will be added later, once the architecture is stable.
+
+## Mission Sequence
+
+ApolloXM is not a single launch mission.
+
+Each vehicle exists for a specific role:
+
+- **Apollo-XM-1F** — Fuel delivery (fuel *is* the payload)
+- **Apollo-XM-1L** — Life support and consumables
+- **Apollo-XM-1X** — Crew mission
+- **Apollo-XM-2R** — Return vehicle, injected to Mars orbit in advance
+
+No crew is launched without a confirmed return path.
+
+## Mission Architecture Overview
+
+### XM-1F — Fuel Payload Mission  
+Delivers propellant to Mars orbit prior to any crew activity.
+
+### XM-1L — Life Support Payload  
+Delivers consumables and long-duration support systems.
+
+### XM-1X — Crew Mission  
+Crew launch occurs only after fuel and life support are confirmed in place.
+
+### XM-2R — Return Vehicle  
+Return vehicle is positioned in Mars injection orbit before crew departure,
+ensuring abort capability and mission closure.
+
+
 ## Descent & Landing Module (DMM)
 **ApolloXM Mars Descent & Landing Module**
 
