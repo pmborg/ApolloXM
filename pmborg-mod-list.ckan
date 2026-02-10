@@ -1,0 +1,339 @@
+{
+    "spec_version": "v1.6",
+    "identifier": "installed-portable",
+    "name": "installed-portable",
+    "abstract": "A list of modules installed on the portable KSP instance",
+    "author": "pmbor",
+    "version": "2026.02.09.09.00.40",
+    "ksp_version_min": "1.8",
+    "ksp_version_max": "1.12",
+    "license": "unknown",
+    "depends": [
+        {
+            "name": "B9PartSwitch",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "kOS",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "DynamicBatteryStorage",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KSP-Recall",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "AnimatedDecouplers",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "BackgroundResources",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "CryoTanks",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "CryoTanks-Core",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "DMagicScienceAnimate",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KerbalEngineerRedux",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SpaceXLegs",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Kopernicus",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "MechJeb2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RSSTextures4096",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RetractableLiftingSurface",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Scatterer-config",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Scatterer-sunflare",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SpaceY-Lifters",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TweakScale",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Waterfall",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "AmpYearPowerManager",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "AntennaHelper",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "BDAnimationModules",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "BetterCrewAssignment",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "BluedogDB",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "CommunityTechTree",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ContractConfigurator",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "CraftManager",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "DockingPortAlignmentIndicator",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "DraggableNavball",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "EasyVesselSwitch",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "FASA",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "FMRSContinued",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "FreeIva",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "FuelTanksPlus",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Hangar",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "HangerExtenderExtended",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "HeatControl",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "HullcamVDSContinued",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KerbalAlarmClock",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KAS",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KIS",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KerbalJointReinforcementContinued",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "PartMapper",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "kOS-KerbalEngineer",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "kOS-MechJeb2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KSCSwitcher",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KSPBurst",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "LunarTransferPlanner",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "MoarFEConfigs",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "NearFutureProps",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "NearFutureSolar-Core",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "NeptuneCamera",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "PLUM",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "PartInfo",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "PatchManager",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ProceduralParts",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RealScaleBoosters",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RealSolarSystem",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RealChute",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RealFuels-Stock",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Resurfaced",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ROSolar",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ROTanks",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "RSSDateTimeFormatter",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Scatterer",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ShipEffectsContinued",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "kOS-SpaceCore",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SpaceXLaunchVehicles",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SpaceY-Expanded",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TACLS",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TantaresSP",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TextureReplacer",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Trajectories",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TransferWindowPlanner",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TundraExploration",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TundraTechnologies",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TweakScaleCompanion",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "USITools",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ZeroMiniAVC",
+            "suppress_recommendations": true
+        }
+    ],
+    "release_date": "2026-02-09T21:00:40.174386Z",
+    "kind": "metapackage"
+}

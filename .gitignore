@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+
+# Compiled artifacts
+*.dll
+*.pdb
+
+# VS / MSBuild
+*.cache
+*.CopyComplete
+*.FileListAbsolute.txt
+*.AssemblyReference.cache
+
+# User files
+*.csproj.user
+.vs/

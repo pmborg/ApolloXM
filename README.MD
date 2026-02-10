@@ -1,0 +1,1104 @@
+# [2] ApolloXM (Earth → Mars → Earth)
+
+## Descent & Landing Module (DMM)
+**ApolloXM Mars Descent & Landing Module**
+
+| Parameter | ApolloXM DMM |
+|---------|-------------|
+| Primary Role | Mars orbital braking, powered descent, landing |
+| Crew | No (autonomous / remotely supervised) |
+| Mission Domain | Mars atmosphere and surface |
+| Architecture | Dedicated descent & landing module |
+| Main Engines | Multi-engine, distributed configuration |
+| Propellant | Aerozine-50 / NTO (hypergolic) |
+| Engine Type | Deep-throttle, restartable |
+| Thrust (Mars ATM) | ~637 kN total |
+| Thrust (Vac) | ~640 kN total |
+| Isp (Vac) | ~323 s |
+| Engine Mass | ~0.25 t (total propulsion system) |
+| Tank Pressurization | Helium |
+| Ignition Capability | Multiple (hypergolic) |
+| Throttle Capability | Yes (precision Mars landing) |
+| Redundancy | Multi-engine + distributed tankage |
+| Reusability | Single mission (Mars surface) |
+| Design Philosophy | Reliability-first, controllability over minimum mass |
+| Total Mass DMM | ~122.3 t |
+
+## Ascent & Launch Module (ALM Propulsion Stack)
+**ApolloXM Mars Ascent Module**
+
+| Parameter | ApolloXM AMM |
+|---------|--------------|
+| Primary Role | Mars surface ascent to low Mars orbit |
+| Crew | No (autonomous / remotely supervised) |
+| Mission Domain | Mars surface → Mars orbit |
+| Architecture | Dedicated ascent module mounted above DMM |
+| Main Engines | 4 × Mk-55 “Thud” liquid fuel engines |
+| Propellant | Aerozine-50 / NTO (hypergolic) |
+| Engine Type | Deep-throttle, restartable |
+| Thrust (Mars ATM) | ~476.6 kN total |
+| Thrust (Vac) | ~480 kN total |
+| TWR (Mars, ATM) | ~4.47 |
+| Isp (Vac) | ~325 s |
+| Engine Mass | ~0.76 t (4 × 0.19 t) |
+| Tank Pressurization | Helium |
+| Ignition Capability | Multiple (hypergolic) |
+| Throttle Capability | Yes (precise ascent & attitude control) |
+| Redundancy | Multi-engine + reaction wheels |
+| Reusability | Single mission (Mars ascent) |
+| Design Philosophy | Control authority first, ascent reliability over minimum mass |
+| Total Mass AMM | ~27.4 t |
+
+
+## DMM Mars Descent & Landing Procedure
+**ApolloXM Mars Descent & Landing Module (DMM)**
+
+This procedure is based on repeated, successful Mars landings using the ApolloXM DMM and is considered **stable, reliable, and pilot-memorizable**.
+Altitude references are **Radar Altitude (RA)** unless stated otherwise.
+
+### Initial Conditions
+- Initial orbit altitude: ~212 km
+- Initial orbital velocity: ~3.45 km/s
+- Reference altitude: **Radar Altitude (RA)** — altitude above terrain, not sea level
+
+### Entry & Initial Braking
+- Initial conditions:  
+  - Altitude: ~212 km  
+  - Velocity: ~3455 m/s
+- Orientation: Retrograde
+- Throttle: **66%**
+
+### Powered Descent Phases
+
+#### High-Altitude Braking
+- At **60 km RA**  
+  - Reference speed: ~1100 m/s  
+  - Throttle: **100%**
+
+#### Mid-Descent Control
+- At **20 km RA**  
+  - Reference speed: ~350 m/s  
+  - Throttle: **33%**
+
+#### Low-Altitude Controlled Descent
+- Below **1200 m RA**  
+  - Hold vertical speed ≈ **30 m/s**
+
+#### Precision Descent Window
+- Between **200 m RA → 100 m RA**
+  - Gradually reduce speed from **30 m/s → 10 m/s**
+  - Transition to fine throttle control
+
+#### Final Landing Rule (Critical)
+- Below **100 m RA**, apply the rule:
+
+  **Target vertical speed = Altitude / 10 (integer)**
+
+  Examples:
+  - 90 m → 9 m/s  
+  - 50 m → 5 m/s  
+  - 20 m → 2 m/s  
+
+- Final meters:
+  - Target touchdown speed: **0.5–1.0 m/s**
+  - Vertical only, no lateral correction unless required
+
+### Notes
+- This profile is robust and repeatable.
+- Once learned, it becomes instinctive (“ride-a-bike rule”).
+- Closely matches real-world Mars powered descent logic.
+
+---
+
+### Key Operational Notes
+- Radar Altitude (RA) is critical; do **not** rely on sea-level altitude
+- Throttle changes should be **smooth and anticipatory**
+- The procedure prioritizes **control authority and predictability** over fuel minimization
+- Typical residual Δv after landing: **~100–300 m/s**
+- The profile is robust and repeatable once learned
+
+> _“Once you learn it, you never forget it — like riding a bike.”_
+
+---
+
+### Design Philosophy
+This landing method reflects **Apollo-style powered descent logic**, adapted to Mars:
+- Continuous braking
+- No suicide burn
+- No last-second throttle spikes
+- Pilot-friendly timing and margins
+
+---
+
+## Mission Variants
+
+- **C** — Crew  
+- **L** — Logistics  
+- **R** — Return / Upgrade  
+
+
+---
+
+ 
+## 🌕 Apollo-X (Moon Program)
+
+**Monolithic Architecture**
+
+- All-in-one  
+- Single launch  
+- Short duration  
+- **C + L + R together**
+
+This program mirrors classic Apollo lunar missions:
+one stack, one launch, one landing, one return.
+
+---
+
+## 🔴 Apollo-XM (Mars Program)
+
+**Distributed Architecture**
+
+- Modular  
+- Multiple launches  
+- Long duration  
+- **C, L, R separated**
+
+Apollo-XM is a campaign-style program where mission roles
+are split across dedicated vehicles.
+
+
+---
+
+## Apollo-X/XM Crafts:
+
+**- Ships/VAB/Apollo-X/**
+- Apollo-X-v3_3.craft
+- Apollo-X-v3_2.craft
+
+**- Ships/VAB/Apollo-XM/**
+- ├─ Apollo-XM-1F-Lander.craft
+- ├─ Apollo-XM-1L-Lander.craft
+- ├─ Apollo-XM-1C-Lander.craft
+- ├─ Apollo-XM-2R-Vehicle.craft
+- ├─ Apollo-XM-1F-Stack-v1_6.craft
+- ├─ Apollo-XM-1L-Stack-v1_6.craft
+- ├─ Apollo-XM-1C-Stack-v1_6.craft
+- ├─ Apollo-XM-2R-Stack-v1_6.craft
+- └─ Apollo-XM-v1_6.craft
+
+
+### Vehicle Roles
+
+- **Apollo-XM-1F** — Fuel Lander  
+- **Apollo-XM-1L** — Life Support Lander  
+- **Apollo-XM-1C** — Crewed Mars Lander  
+- **Apollo-XM-2R** — Return / Upgrade Vehicle  
+
+---
+
+## Naming Doctrine
+
+- Craft files define **hardware geometry only**
+- Mission duration, crew count, and consumables are handled by configuration
+- Launchers are interchangeable infrastructure
+- Names reflect **function**, not iteration history
+
+> *Missions keep their names.  
+Launchers evolve underneath them.*
+
+## Runtime Configuration (ModuleManager)
+
+This program relies on a set of custom ModuleManager patches
+installed under `Kerbal Space Program/GameData/`.
+
+These patches modify engines, tanks, life support, staging,
+and realism parameters used by **both Apollo-X and Apollo-XM**.
+
+They are **global runtime configurations**, not craft-specific assets.
+
+Craft files do not embed these settings.
+
+---
+
+## ModuleManager Patch Overview (Runtime Layer)
+
+Apollo-X and Apollo-XM rely on a shared set of custom
+ModuleManager patches installed under:
+
+**Kerbal Space Program/GameData/**
+
+These patches define the **physical simulation environment**
+used by all craft in this repository.
+
+### Patch Categories
+
+#### Engine & Propulsion
+- Engine thrust and ISP corrections
+- Ullage and ignition behavior
+- Upper-stage restart reliability
+- Saturn, Falcon, Agena realism tuning
+
+#### Tank & Mass Corrections
+- Real propellant densities
+- LM and Saturn tank mass fixes
+- Procedural tank enforcement
+- Cryogenic vs storable propellant behavior
+
+#### Structural & Staging Fixes
+- Interstage separation behavior
+- Decoupler corrections
+- Fairing and adapter fixes
+- Landing leg stability
+
+#### Life Support Integration
+- TAC Life Support configuration
+- Crew capacity normalization
+- Cross-compatibility with capsules and habitats
+
+### Naming Conventions
+
+- `fix-*` → Corrects broken or unrealistic behavior  
+- `procedural-*` → Enforces procedural part constraints  
+- `RSB*` → Realism subsystem patches  
+- `zzz_*` → Late-load order enforcement  
+
+### Important Note
+
+These patches are **global runtime configuration**.
+They apply equally to Apollo-X and Apollo-XM.
+
+Craft files define **hardware geometry only** and do not embed
+engine, tank, or life-support parameters.
+
+---
+
+## Runtime Configuration (GameData)
+
+The `GameData/` directory contains custom ModuleManager patches and plugins
+used to enforce realistic behavior across all craft.
+
+These patches apply globally and are shared by:
+- Apollo-X (Moon)
+- Apollo-XM (Mars)
+
+They are **not craft-specific** and must remain in `GameData/`
+for proper operation.
+
+
+### GameData/Pmborg/
+
+Contains custom realism patches developed for Apollo-style vehicles:
+
+- Saturn stage mass and tank corrections
+- LM tank and ascent-stage behavior
+- Procedural tank enforcement
+- Decoupler and interstage fixes
+- Ullage and ignition behavior
+
+### GameData/Pmborg-RealFalcons/
+
+Contains engine, tank, and structural realism patches
+originally developed for Falcon and Starship systems,
+reused here for shared physics consistency:
+
+- Engine ISP and thrust corrections
+- Fuel density fixes
+- Landing leg stability
+- Solar panel and RCS fixes
+- TAC Life Support integration
+
+### GameData/000-Pmborg-RealFalcons/
+
+Contains early-load compatibility patches.
+
+The `000-` prefix ensures correct load order
+before other ModuleManager patches are applied.
+
+## Important CRITICAL warning:
+
+- Do NOT move or rename files inside `GameData/`
+- Do NOT place `.craft` files inside `GameData/`
+- Craft files define vehicle geometry only
+- Physical behavior is controlled by ModuleManager patches
+
+
+
+---
+---
+
+## Stage 1 Reference Comparison — Apollo-XM vs Hypothetical Saturn-V (8 × F-1B)
+
+To fairly contextualize Apollo-XM Stage 1, it is compared not with the flown Saturn-V,
+but with a **credible Saturn-V evolution that never flew**:  
+a first stage using **eight F-1B engines**.
+
+This represents the **upper practical limit** of kerolox-heavy booster scaling.
+
+---
+
+### First Stage Engine Architecture Comparison
+
+| Parameter | Saturn-V (8 × F-1B, hypothetical) | Apollo-XM Stage 1 |
+|---------|-----------------------------------|------------------|
+| Engine Type | F-1B | Mk4 RAP-39000-B “Kingfisher” |
+| Engine Count | 8 | 7 clusters |
+| Propellant | RP-1 / LOX | LCH₄ / LOX |
+| Thrust per Engine (ASL) | 8,000 kN | 65,709.9 kN |
+| Thrust per Engine (Vac) | 9,000 kN | 71,306.1 kN |
+| Total Thrust (ASL) | ~64 MN | ~460 MN |
+| Total Thrust (Vac) | ~72 MN | ~499 MN |
+| ISP (ASL) | ~280 s | 364 s |
+| ISP (Vac) | ~315 s | 395 s |
+| Engine Mass (each) | 7.5 t | 20.3 t |
+| Combustion Cycle | Gas-generator | Full-flow staged combustion |
+| Power Generation | Minimal | 300 EC/s per cluster |
+| Throttle Capability | Limited | Full |
+| Restart Capability | Limited | Yes |
+
+---
+
+### Architectural Interpretation
+
+- **8 × F-1B Saturn-V** represents the *maximum plausible* evolution of Apollo-era technology
+- It achieves high thrust, but:
+  - Lower ISP
+  - Higher propellant mass
+  - Limited throttling and restart capability
+- **Apollo-XM Stage 1** exceeds this limit by changing the propulsion paradigm:
+  - Methalox instead of kerolox
+  - Full-flow staged combustion
+  - Extreme parallel clustering
+  - Higher efficiency at all ascent regimes
+
+---
+
+### Design Conclusion
+
+Apollo-XM Stage 1 is not an over-scaled Saturn-V.
+
+It is what **Saturn-V might have become** if:
+- combustion physics had advanced,
+- methalox propulsion were available,
+- and Mars-class payloads had driven the requirements.
+
+> **Apollo-XM preserves Apollo’s thrust-first philosophy —  
+> but removes the chemical and structural limits of the 1960s.**
+
+> **Historical note — Saturn S-IC-8**
+>
+> The comparison baseline uses a *hypothetical but historically grounded* Saturn V variant.
+>  
+> NASA studies in the late Apollo era defined **S-IC-8**, a first-stage upgrade
+> designed to fly with **eight F-1–class engines instead of five**.
+>  
+> The S-IC-8 tank was:
+> - lengthened and structurally reinforced
+> - designed for higher thrust loading
+> - intended to support advanced Apollo, Mars, and nuclear upper-stage missions
+>
+> This configuration represents the **maximum credible evolution of Saturn V**
+> within kerolox chemical propulsion.
+
+
+---
+---
+
+
+## Apollo-XM — Stage 1  
+### Atmospheric Lift & Gravity Well Escape (Integrated Booster Stage)
+
+Stage 1 is a **single integrated launch stage** combining **solid radial boosters** and a **central super-heavy clustered engine core**.  
+Both systems ignite at liftoff and operate in parallel to maximize thrust-to-weight during the atmospheric ascent phase.
+
+---
+
+### Stage 1 — Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | Atmospheric lift & initial gravity well escape |
+| Vehicle | Apollo-XM Launch Vehicle — Stage 1 |
+| Architecture | Integrated core + radial boosters |
+| Staging Philosophy | Parallel burn, booster separation |
+| Structural Role | Primary atmospheric booster stage |
+| Reusability | Engine hardware reusable (design intent) |
+
+### Propulsion Subsystems (Stage 1)
+
+#### Radial Solid Boosters (×8)
+
+| Parameter | Value |
+|---------|------|
+| Booster Count | 8 radial boosters |
+| Booster Type | Ares-I Solid Rocket Booster (scaled) |
+| Scale Factor | 240 % |
+| Propellant | Solid Fuel |
+| Thrust per Booster (ASL) | 1,444.8 kN |
+| Thrust per Booster (Vac) | 1,600.0 kN |
+| Total Booster Thrust (ASL) | ~11.6 MN |
+| Total Booster Thrust (Vac) | ~12.8 MN |
+| ISP (ASL / Vac) | 242 s / 268 s |
+| Gimbal Range | 8.0° |
+| Throttle Control | None (solid) |
+
+##### Mass Accounting — Solid Boosters (RealFuels)
+
+| Mass Component | Value (per booster) |
+|---------------|--------------------|
+| Dry Mass (structure) | ~1,327 t |
+| Propellant Mass (Solid Fuel) | ~8,361 t |
+| **Total Mass (per booster)** | **~9,688 t** |
+| **Total Booster Mass (×8)** | **~77,500 t** |
+
+> **Note:**  
+> In RealFuels / RealScaleBoosters, *fuel mass is stored separately from part dry mass*.  
+> The extreme total mass reflects **240% scaling**, where volume (and propellant mass) grows cubically.
+
+---
+
+#### Central Engine Core (×7 Clusters)
+
+| Parameter | Value |
+|---------|------|
+| Engine Class | Super Heavy Booster Cluster Engine |
+| Engine Implementation | Mk4 RAP-39000-B “Kingfisher” |
+| Engine Count | 7 clusters |
+| Propellant | LCH₄ / LOX |
+| Thrust per Cluster (ASL) | 65,709.9 kN |
+| Thrust per Cluster (Vac) | 71,306.1 kN |
+| Total Core Thrust (ASL) | ~460 MN class |
+| Total Core Thrust (Vac) | ~499 MN class |
+| ISP (ASL / Vac) | 364 s / 395 s |
+| Engine Mass (per cluster) | 20.3 t |
+| Total Engine Mass | ~142 t |
+| Throttle Control | Full |
+| Gimbal | Enabled |
+
+---
+
+### Design Notes
+
+- Solid boosters provide **immediate thrust dominance at liftoff**
+- Kingfisher clusters sustain **high-efficiency thrust through max-Q and upper atmosphere**
+- The combined system replaces Saturn-V-style sequential staging with **extreme parallel thrust**
+- Very high thrust margin compensates for:
+  - Exceptionally heavy upper stages
+  - Long-duration Mars mission payloads
+  - Conservative, pilot-friendly ascent profiles
+
+This is **architectural continuity**, not replication:  
+Apollo-XM preserves Apollo’s thrust-first philosophy while scaling it to **Mars-class mission requirements**.
+
+
+### Stage 1 — Propulsion Performance Breakdown
+
+Stage 1 operates as a **single continuous burn**, but Kerbal Engineer Redux reports two distinct performance regimes due to changing vehicle mass and effective ISP.
+
+---
+
+#### Stage 1B — Core Engines Only (Post-Booster Separation)
+
+| Parameter | Value |
+|---------|------|
+| Active Propulsion | Kingfisher engine clusters only |
+| Effective ISP | 395.0 s |
+| Total Thrust | 499,143 kN |
+| TWR (Max) | 1.38 (3.86) |
+| Δv Contribution | 3,996 m/s (of 7,169 m/s total remaining) |
+| Burn Time (This Phase) | 3m 04s |
+| **Cumulative Engine Burn Time** | **3m 04s + 2m 34s** |
+
+> **Note:** Engines do not restart.  
+> This phase is a continuation of the same ignition after booster separation.
+
+---
+
+#### Stage 1A — Integrated Boosters + Core Engines (Liftoff Phase)
+
+| Parameter | Value |
+|---------|------|
+| Active Propulsion | Solid boosters + Kingfisher engine clusters |
+| Effective ISP | 312.3 s |
+| Total Thrust | 1,641,332 kN |
+| TWR (Max) | 1.24 (3.50) |
+| Δv Contribution | 3,172 m/s |
+| Burn Time (This Phase) | 2m 34s |
+
+> This phase provides **maximum thrust dominance** during liftoff and early atmospheric ascent, at the cost of lower effective ISP due to solid propellant contribution.
+
+---
+
+### Stage 1 — Operational Summary
+
+- Stage 1 uses **one ignition and one continuous burn**
+- KER separates reporting due to **mass and ISP transitions**
+- Total engine runtime is the **sum of both phases**
+- No coast, no shutdown, no restart
+
+---
+---
+
+## Apollo-XM — Stage 2  
+### High-Altitude / Orbital Acceleration
+
+Stage 2 represents the **first true upper stage** of the Apollo-XM launch vehicle.  
+Although Kerbal Space Program assigns multiple numeric stages due to decouplers and
+booster separation, **Stage 2 is architecturally defined by propulsion role**, not
+by KSP stage numbering.
+
+Stage 2 begins at **KER stage S4**.
+
+---
+
+### Stage 2 — Entry Conditions
+
+Stage 2 ignition occurs immediately after completion of Stage 1 atmospheric lift and booster
+separation, under the following flight conditions:
+
+| Parameter | Value |
+|---------|------|
+| Entry Altitude | **268.5 km** |
+| Entry Velocity | **4,965 m/s** |
+| Atmospheric Regime | Upper atmosphere / near-vacuum |
+| Guidance Mode | High-altitude ascent & orbital acceleration |
+
+At ignition, the vehicle has already cleared the dense atmospheric regime.  
+Stage 2 therefore operates as a **super-heavy high-altitude accelerator**, bridging the gap between
+atmospheric ascent and true orbital insertion.
+
+This stage assumes the role traditionally split between upper first-stage burnout and classical
+second-stage acceleration in Saturn-era launch vehicles.
+
+---
+
+### Stage 2 — Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | High-altitude acceleration & orbital insertion |
+| Vehicle | Apollo-XM Launch Vehicle — Stage 2 |
+| KSP Stage Index | S4 |
+| Architecture | Vacuum-optimized, thrust-first |
+| Structural Role | Upper ascent / orbital injection stage |
+| Restart Capability | Multiple (design-enabled) |
+| Reusability | Not reused |
+
+---
+
+### Propulsion System
+
+| Parameter | Value |
+|---------|------|
+| Engine Class | Vacuum-optimized methalox engine |
+| Engine Implementation | Mk4 RAP-39000-B “Kingfisher” (vacuum regime) |
+| Engine Count | 1 cluster |
+| Propellant | LCH₄ / LOX |
+| Thrust (Vacuum) | 71,306.1 kN |
+| ISP (Vacuum) | 395 s |
+| Throttle Control | Full |
+| Gimbal | Enabled |
+
+---
+
+### Performance (KER Reference)
+
+| Parameter | Value |
+|---------|------|
+| Effective ISP | 395.0 s |
+| Total Thrust | 71,306.1 kN |
+| TWR (Max) | 0.91 (1.73) |
+| Δv Contribution | 2,481 m/s (of 9,650 m/s remaining) |
+| Burn Time | 3m 24s |
+
+---
+
+### Operational Role (Apollo-XM)
+
+Stage 2 performs:
+
+- Sustained acceleration above the dense atmosphere
+- Completion of Earth orbital insertion
+- Velocity shaping for Earth escape
+- Preparation for continuous burn injection strategy
+- Minimization of gravity and cosine losses
+
+Stage 2 is **not payload-optimized**.  
+It is **architecture-optimized**, prioritizing thrust continuity and ascent stability
+over absolute mass efficiency.
+
+---
+
+### Architectural Interpretation
+
+Stage 2 preserves the **Saturn V S-II role**, but replaces:
+
+- hydrogen complexity  
+- low thrust-to-weight ratios  
+
+with:
+
+- methalox simplicity
+- higher thrust margins
+- improved guidance authority
+- seamless integration with continuous-burn interplanetary injection
+
+This reflects **architectural continuity**, not replication:
+the staging logic remains Apollo-derived, while propulsion technology evolves.
+
+In summary, Stage 2 functions as a **super-heavy booster operating in vacuum**.
+
+The fundamental difference relative to Stage 1 is not architectural, but environmental:
+Stage 2 ignites at approximately **268.5 km altitude** and **~4.97 km/s velocity**, inherited
+directly from Stage 1.
+
+From this point onward, Stage 2 continues aggressive thrust-first acceleration outside the
+atmosphere, prioritizing velocity accumulation and orbital energy rather than lift.
+
+---
+---
+
+## Apollo-XM — Stage 3  
+### High-Altitude / Orbital Acceleration (S3)
+
+Stage 3 represents the **final high-thrust acceleration stage** of the Apollo-XM launch vehicle.
+Although numbered as *S3* in KSP by coincidence, its operational role is consistent with a
+classical **orbital acceleration stage**, operating entirely above the sensible atmosphere.
+
+Stage 3 ignites after completion of the super-heavy booster phases and continues velocity
+build-up toward orbital insertion and mission-specific departure profiles.
+
+---
+
+### Stage 3 — Entry Conditions
+
+Stage 3 ignition occurs after completion of the super-heavy booster phases, under the following
+flight conditions:
+
+| Parameter | Value |
+|---------|------|
+| Entry Altitude | **432.5 km** |
+| Entry Velocity | **7,093 m/s** |
+| Atmospheric Regime | Near-vacuum |
+| Guidance Mode | Vacuum-optimized ascent |
+
+At ignition, the vehicle is already well above the dense atmosphere, allowing Stage 3 to operate
+entirely as a **high-efficiency orbital acceleration system**, unconstrained by aerodynamic or
+thermal limits.
+
+---
+
+### Stage 3 — Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | High-altitude & orbital acceleration |
+| Vehicle | Apollo-XM Launch Vehicle — Stage 3 |
+| KSP Stage ID | S3 |
+| Architecture | Multi-engine liquid propulsion stage |
+| Operating Regime | Near-vacuum / vacuum |
+| Structural Role | Final ascent propulsion stage |
+| Restart Capability | Enabled |
+
+---
+
+### Propulsion System (Stage 3)
+
+| Parameter | Value |
+|---------|------|
+| Engine Type | RS-25 (Space Shuttle Main Engine) |
+| Engine Count | **5 × RS-25** |
+| Propellant | RP-1 / LOX |
+| Thrust (ASL) | ~9,225 kN |
+| Thrust (Vac) | ~11,395 kN |
+| ISP (ASL / Vac) | ~452 s / ~452 s |
+| Gimbal Range | 10.5° |
+| Throttle Control | Full |
+| Engine Mass (total) | ~19.5 t |
+
+---
+
+### Performance (KSP Engineer — S3)
+
+| Metric | Value |
+|------|------|
+| TWR (max) | 0.31 (0.77) |
+| Δv (Stage / Total) | 4,007 / 13,657 m/s |
+| Burn Time | 14m 23s |
+
+---
+
+### Operational Role
+
+Stage 3 performs:
+
+- Final atmospheric exit (upper fringe)
+- Primary orbital velocity accumulation
+- Orbit shaping and circularization
+- Injection setup for downstream mission phases
+
+Unlike a payload-optimized upper stage, Stage 3 preserves **thrust-first logic**, ensuring
+stable guidance, controllability, and generous margins for heavy Mars-class payloads.
+
+---
+
+### Architectural Interpretation
+
+Stage 3 completes the Apollo-XM ascent stack by:
+
+- Using **multiple high-ISP engines** for redundancy and control authority
+- Operating exclusively in low-drag conditions
+- Maintaining Apollo-style continuous acceleration
+- Avoiding coast-heavy or fragile staging strategies
+
+This ensures **operational robustness** over minimum-mass optimization, consistent with the
+Apollo-XM philosophy of reliability-first design.
+
+---
+---
+
+## Apollo-XM — Stage 4  
+### Orbital Acceleration & Injection (Final Booster Stage)
+
+> **Important staging note:**  
+> In Kerbal Space Program, decouplers and separations are counted as stages.  
+> **Apollo-XM Stage 4 corresponds to KSP stage S2.**
+
+Stage 4 is the **final propulsion stage** of the Apollo-XM launch architecture.  
+It receives a vehicle that is **already escaping Earth’s gravity well** and performs
+the final **orbital energy shaping and injection burn**.
+
+---
+
+### Stage 4 — Entry Conditions
+
+| Parameter | Value |
+|---------|------|
+| Entry Altitude | **~1,473 km** |
+| Entry Velocity | **~9,968 m/s** |
+| Orbital State | Earth-relative, committed escape trajectory |
+| Delivered By | Apollo-XM Stage 3 |
+
+---
+
+### Stage 4 — Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | Final orbital acceleration & injection |
+| Vehicle | Apollo-XM Launch Vehicle — Stage 4 |
+| Architecture | Single-engine liquid stage |
+| Structural Role | Orbital injector |
+| Restart Capability | Enabled |
+| Throttle Control | Full |
+
+---
+
+### Propulsion System (Stage 4)
+
+#### RS-25 Main Engine
+
+| Parameter | Value |
+|---------|------|
+| Engine Type | RS-25 (Space Shuttle Main Engine) |
+| Engine Count | **1 × RS-25** |
+| Propellant | RP-1 / LOX |
+| Thrust (ASL) | ~1,844 kN |
+| Thrust (Vac) | ~2,279 kN |
+| ISP (ASL / Vac) | ~366 s / ~452 s |
+| Gimbal Range | ~10.5° |
+| Engine Restart | Enabled |
+
+---
+
+### Performance Summary (Stage 4)
+
+| Parameter | Value |
+|---------|------|
+| TWR (max) | ~0.91 (1.73) |
+| Δv Contribution | ~2,481 m/s |
+| Burn Time | ~3 min 24 s |
+| KSP Stage ID | S2 |
+
+---
+
+### Operational Role
+
+Stage 4 operates **entirely outside the atmosphere** and performs:
+
+- Precise acceleration while already escaping Earth
+- Energy trimming of a hyperbolic trajectory
+- Final injection cleanup for interplanetary transfer readiness
+
+This stage does **not** provide lift —  
+it operates purely as a **precision orbital injector**.
+
+---
+
+### Architectural Interpretation
+
+Stage 4 is the Apollo-XM analogue of the **Saturn V S-IVB**, but pushed to
+much higher entry energy:
+
+- Single, high-efficiency engine
+- Long-duration, controlled burn
+- Restart capability for trajectory shaping
+
+Apollo-XM preserves Apollo’s staging logic while scaling velocity,
+altitude, and mission scope to **Mars-class escape conditions**.
+
+---
+---
+
+## Apollo-XM — Stage 5  
+### Interplanetary Injection & Mars Orbit Shaping
+
+Stage 5 is the **final propulsion stage of the Apollo-XM launch stack**.  
+It completes **Mars Injection**, performs all **interplanetary correction maneuvers**,  
+and executes a **two-pass Mars orbital capture strategy** using continuous braking logic.
+
+This stage operates **entirely in vacuum** and remains attached until stable Mars orbit
+conditions are achieved.
+
+---
+
+### Stage 5 — Entry Conditions
+
+| Parameter | Value |
+|---------|------|
+| Orbital Frame | Sun-centric (heliocentric) |
+| Entry Location | Post-Earth SOI exit |
+| Entry Velocity (heliocentric) | ≥ 33,000 m/s |
+| Orbital State | Interplanetary transfer to Mars |
+| Delivered By | Apollo-XM Stage 4 |
+
+---
+
+### Stage 5 — Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | Mars injection, transfer correction, orbital capture |
+| Vehicle | Apollo-XM Launch Vehicle — Stage 5 |
+| Architecture | Single-engine liquid stage |
+| Structural Role | Interplanetary propulsion stage |
+| Restart Capability | Enabled (multiple restarts) |
+| Throttle Control | Full |
+
+---
+
+### Propulsion System (Stage 5)
+
+#### RS-25 Main Engine
+
+| Parameter | Value |
+|---------|------|
+| Engine Type | RS-25 (Space Shuttle Main Engine) |
+| Engine Count | **1 × RS-25** |
+| Propellant | RP-1 / LOX |
+| Thrust (ASL) | ~1,844 kN |
+| Thrust (Vac) | ~2,279 kN |
+| ISP (ASL / Vac) | ~366 s / ~452 s |
+| Gimbal Range | ~10.5° |
+| Engine Restart | Enabled |
+
+---
+
+### Performance Summary (Stage 5)
+
+| Parameter | Value |
+|---------|------|
+| Primary Function | Mars Injection + Orbital Capture |
+| Δv Allocation | Mars transfer + corrections |
+| Burn Profile | Multiple long-duration burns |
+| Operational Mode | Continuous braking (no suicide burn) |
+
+---
+
+### Mars Capture Strategy
+
+Stage 5 executes a **two-pass Mars orbit insertion**, optimized for control and margins:
+
+1. **Initial Mars Encounter**
+   - Elliptical capture orbit
+   - Initial periapsis (PE): **~56 km**
+   - Continuous retro-burn at periapsis
+
+2. **Second Periapsis Pass**
+   - Orbit refinement
+   - Final periapsis (PE): **~50 km**
+   - Transition to stable Mars orbit
+
+This approach minimizes:
+- peak thermal loads
+- extreme thrust spikes
+- last-second braking risks
+
+---
+
+### Design Notes
+
+- Stage 5 replaces a classical single-burn MOI with **Apollo-style continuous braking**
+- The RS-25 provides:
+  - exceptional vacuum efficiency
+  - fine throttle control
+  - restart reliability for long missions
+- This stage remains attached until:
+  - Mars orbit is stabilized
+  - rendezvous or descent preparation begins
+
+Stage 5 completes the **Earth → Mars propulsion chain**, delivering the Apollo-XM
+payload into a **controlled, pilot-friendly Mars orbit**.
+
+---
+
+### Reusability Policy (Apollo-XM)
+
+Apollo-XM follows a **strict, physics-driven reusability rule**.
+
+| Stage | Reusability | Reason |
+|------|------------|--------|
+| **Stage 1** | **Recoverable (design intent)** | Atmospheric booster stage; sub-orbital energy allows controlled recovery |
+| Stage 2 | Not recoverable | Excess orbital inertia after separation prevents return |
+| Stage 3 | Not recoverable | High-energy orbital acceleration stage |
+| Stage 4 | Not recoverable | Expended into heliocentric (Sun) orbit |
+| Stage 5 | Not recoverable | Expended during Mars injection and lost during Mars atmospheric entry |
+
+
+---
+---
+
+## Landers
+
+All Apollo-XM landers are designed to enter Mars operations from a **stable circular parking orbit**, ensuring repeatable, low-risk deployment.
+
+### Default Entry Conditions (Common to All XM Landers)
+
+Apollo-XM landers are equipped with **auxiliary electric wheel assemblies** intended for **low-speed surface repositioning** after touchdown.
+
+These wheels are **not rovers** and are not designed for sustained traversal.
+
+| Parameter | Value |
+|---------|------|
+| Mobility Type | Electric wheels (auxiliary) |
+| Drive Purpose | Fine positioning & short relocation |
+| Recommended Max Speed | **≤ 5 m/s** |
+| Absolute Limit | Not defined (structural risk increases rapidly) |
+| Steering | Differential / limited steering |
+| Power Source | Onboard electric system |
+| Terrain Assumption | Flat to mildly uneven terrain |
+
+Surface speed limits are driven by inertial and structural considerations, not weight.
+
+---
+
+#### Operational Constraints
+
+- **Speeds above 5 m/s are not recommended**
+- Risks increase sharply beyond this limit:
+  - wheel motor overheating
+  - landing leg side-load amplification
+  - structural fatigue at wheel attachment points
+  - loss of traction on regolith
+- Wheels are intended for:
+  - pad clearance
+  - docking alignment
+  - hazard avoidance
+- Wheels are **not suitable** for:
+  - long-distance travel
+  - slopes
+  - rough terrain traversal
+
+Primary surface mobility for Mars missions is expected to be provided by **dedicated rovers**, not landers.
+
+This design preserves **Apollo-style landing stability**, with minimal but practical post-landing mobility.
+
+### Nominal Orbital Entry Conditions (All XM Landers)
+
+| Parameter | Value |
+|---------|------|
+| Target Orbit | Circular Mars Orbit |
+| Entry Altitude | 212 km |
+| Entry Velocity | ~3,455 m/s |
+| Environment | Mars (thin atmosphere) |
+
+## Mass & Gravity Context
+
+| Parameter | Value |
+|---------|------|
+| Lander Mass (Mars) | **≈ 149.9 t** |
+| Mars Surface Gravity | **0.38 g (Earth)** |
+| Effective Weight on Mars | **≈ 57 t (Earth-equivalent)** |
+
+> While the *mass* is unchanged, the **operational load** on engines, legs, and wheels is significantly reduced.
+
+## Design Notes
+
+- Descent is **fully propulsive** (Apollo-style continuous braking)
+- No parachutes or aero capture reliance
+- Thrust margin allows:
+  - Controlled descent
+  - Hover / divert
+  - Abort ascent if required
+- Engine clustering provides redundancy against single-engine failure
+
+This configuration defines the **baseline standard** for all Apollo-XM landers.
+
+---
+
+## Apollo-XM-1F — Fuel Lander
+
+### Hardware Overview
+
+| Parameter | Value |
+|---------|------|
+| Role | Fuel delivery and surface propellant infrastructure |
+| Vehicle | Apollo-XM-1F Fuel Lander |
+| Configuration | Uncrewed, autonomous |
+| Wet Mass | ~149.9 t |
+| Power Systems | Passive |
+| Structural Role | Surface propellant depot |
+
+
+Although the lander mass is ~149 t, Mars gravity reduces effective surface weight to
+approximately 38% of Earth, significantly lowering static wheel and landing leg loads.
+
+---
+
+## Propulsion System — Descent & Surface Operations
+
+### Main Engines (Descent / Ascent Assist)
+
+> **Environment-corrected values (Mars atmosphere ≈ near-vacuum)**
+
+| Parameter | Value |
+|---------|------|
+| Engine Type | Gemini **LR-91 Mini** Rocket Engine |
+| Engine Count | **6** |
+| Propellant | Aerozine-50 / NTO |
+| Throttle Capability | Yes |
+| Restart Capability | Yes (multiple ignitions) |
+| Ullage Requirement | Yes |
+
+#### Performance (Mars)
+
+| Parameter | Value |
+|---------|------|
+| Total Thrust (Mars ATM) | **≈ 956 kN** |
+| Total Thrust (Vacuum) | **≈ 960 kN** |
+| ISP (Mars ATM) | **≈ 321.5 s** |
+| ISP (Vacuum) | **≈ 323.0 s** |
+| Burn Time (full tanks) | **≈ 6 min 03 s** |
+| Total Δv (Mars) | **≈ 4,186 – 4,205 m/s** |
+| TWR on Mars (max) | **≈ 1.70** |
+
+---
+
+### Architectural Role
+
+- Apollo-XM-1F is the **first surface asset deployed** in the Mars campaign.
+- Delivers **ascent and surface propellant** for later crew operations.
+- Uses **Apollo-style continuous braking** (no suicide burn).
+- No crew systems, no return capability.
+- After landing, the vehicle becomes **permanent surface infrastructure**.
+
+This lander forms the **logistics foundation** of the Apollo-XM Mars architecture.
