@@ -1,3 +1,11 @@
+**There are 2 ApolloX programs addressed in my REPOS:**
+
+- [1] ApolloX (Earth → Moon → Earth)**
+
+- **[2] ApolloXM (Earth → Mars → Earth)** (this REPO)
+
+---
+
 # [2] ApolloXM (Earth → Mars → Earth)
 
 # ApolloXM — Mars Mission Architecture
@@ -23,25 +31,102 @@ Each vehicle exists for a specific role:
 
 - **Apollo-XM-1F** — Fuel delivery (fuel *is* the payload)
 - **Apollo-XM-1L** — Life support and consumables
-- **Apollo-XM-1X** — Crew mission
+- **Apollo-XM-1C** — Crew mission
 - **Apollo-XM-2R** — Return vehicle, injected to Mars orbit in advance
 
 No crew is launched without a confirmed return path.
 
-## Mission Architecture Overview
+## ApolloXM Mission Architecture — Sequenced Mars Surface Campaign
 
-### XM-1F — Fuel Payload Mission  
-Delivers propellant to Mars orbit prior to any crew activity.
+ApolloXM is not a single launch mission.  
+It is a staged, pre-positioned Mars surface architecture designed for safety, redundancy, and controlled mass scaling.
 
-### XM-1L — Life Support Payload  
-Delivers consumables and long-duration support systems.
+The missions are executed in the following order:
 
-### XM-1X — Crew Mission  
-Crew launch occurs only after fuel and life support are confirmed in place.
+---
 
-### XM-2R — Return Vehicle  
-Return vehicle is positioned in Mars injection orbit before crew departure,
-ensuring abort capability and mission closure.
+### 1️⃣ Apollo-XM-1F — Fuel Delivery
+
+**Payload:** Surface propellant infrastructure  
+**Role:** Establish surface ascent capability before any crew is committed.
+
+- Fuel *is* the payload.
+- Uncrewed, autonomous landing.
+- Provides ascent propellant for later crew departure.
+- Acts as the core surface logistics anchor.
+
+> No crew lands until fuel is already waiting on Mars.
+
+---
+
+### 2️⃣ Apollo-XM-1L — Life Support & Consumables
+
+**Payload:** Life support systems and consumables  
+**Role:** Surface habitation readiness
+
+- Lands near XM-1F fuel depot.
+- Higher Δv margin for landing precision.
+- Provides environmental systems, reserves, and redundancy.
+
+> Surface survival capability is established before crew arrival.
+
+---
+
+### 3️⃣ Apollo-XM-1C — Crew Mission
+
+**Payload:** Crew + Ascent Mission Module (AMM)  
+**Role:** Human Mars landing
+
+- Lands near previously deployed 1F and 1L assets.
+- Includes 3 crew seats.
+- Equipped with AMM (4 engines) for Mars ascent.
+- Uses pre-positioned surface fuel.
+
+> Crew never depends on assets that are not already verified on the surface.
+
+---
+
+### 4️⃣ Apollo-XM-2R — Return Vehicle (Pre-Deployed)
+
+**Configuration:** Two-stage RS-25 propulsion stack  
+**Role:** Mars orbit return platform
+
+- Injected to Mars orbit *in advance*.
+- Includes fuel and life support for return trip.
+- Remains in stable Mars orbit awaiting crew rendezvous.
+
+Stage Overview:
+- **Stage 1:** High-thrust departure stage
+- **Stage 2:** Trans-Earth injection and return systems
+
+> The return vehicle is waiting in Mars orbit before the crew ever departs Earth.
+
+---
+
+### 5️⃣ ApolloX Lunar Retrieval
+
+After Mars ascent and rendezvous with XM-2R:
+
+- Crew returns toward Earth–Moon system.
+- ApolloX mission performs lunar-orbit interception.
+- Final recovery occurs in Moon orbit.
+
+> Earth reentry mass is minimized.  
+> Lunar orbit becomes the controlled recovery node.
+
+---
+
+## Architectural Principles
+
+- Pre-position critical infrastructure before crew launch.
+- Surface fuel exists before ascent is required.
+- Return vehicle exists before departure from Earth.
+- Each step reduces risk through sequencing, not complexity.
+
+ApolloXM is not expansion-based colonization.
+
+It is controlled, geometric scaling of the Apollo principle to interplanetary distances.
+
 
 
 ## Descent & Landing Module (DMM)
@@ -540,35 +625,55 @@ Stage 1 operates as a **single continuous burn**, but Kerbal Engineer Redux repo
 
 ---
 
+#### Stage 1A — Integrated Boosters + Core Engines (Liftoff Phase)
+
+| Parameter | v1.6 (8×240% + 7 Raptor Clusters) | v1.7 (16 × (2 × 150%) + 1 Raptor Cluster) |
+|------------|---------------|---------------------|
+| Active Propulsion | Solid boosters + Kingfisher clusters | Solid boosters (dual geometry) + Kingfisher clusters |
+| Effective ISP | 312.3 s | ~Improved mass-weighted ISP |
+| Total Thrust | 1,641,332 kN | Increased (geometry-optimized) |
+| TWR (Max) | 1.24 (3.50) | ~1.03 → 2.09 dynamic ramp |
+| Δv Contribution | 3,172 m/s | ~3,3xx m/s (flight-verified) |
+| Burn Time | 2m 34s | Slightly extended due to scaling |
+
+
+> This phase provides **maximum thrust dominance** during liftoff and early atmospheric ascent, at the cost of lower effective ISP due to solid propellant contribution.
+
+---
+
 #### Stage 1B — Core Engines Only (Post-Booster Separation)
 
-| Parameter | Value |
-|---------|------|
-| Active Propulsion | Kingfisher engine clusters only |
-| Effective ISP | 395.0 s |
-| Total Thrust | 499,143 kN |
-| TWR (Max) | 1.38 (3.86) |
-| Δv Contribution | 3,996 m/s (of 7,169 m/s total remaining) |
-| Burn Time (This Phase) | 3m 04s |
-| **Cumulative Engine Burn Time** | **3m 04s + 2m 34s** |
+| Parameter | v1.6 (7 Raptor Clusters) | v1.7 (7 Raptor Clusters) |
+|------------|-------|-------|
+| Active Propulsion | 7 Kingfisher clusters | 7 Kingfisher clusters |
+| Effective ISP | 395.0 s | 395.0 s |
+| Total Thrust | 499,143 kN | Same |
+| TWR (Max) | 1.38 (3.86) | Slightly improved due to lower initial mass |
+| Δv Contribution | 3,996 m/s | ~5,067 m/s (core fuel now dominant) |
+| Burn Time | 3m 04s | Extended — full core utilization |
+
 
 > **Note:** Engines do not restart.  
 > This phase is a continuation of the same ignition after booster separation.
 
----
+## Apollo-XM-1L-Stack: v1.6 vs v1.7 Propulsion Performance Comparison
 
-#### Stage 1A — Integrated Boosters + Core Engines (Liftoff Phase)
+The solid booster configuration used in v1.7 is conceptually based on the **Ares I First Stage Booster**, a five-segment solid rocket motor derived from the Space Shuttle Solid Rocket Boosters (SRBs).
 
-| Parameter | Value |
-|---------|------|
-| Active Propulsion | Solid boosters + Kingfisher engine clusters |
-| Effective ISP | 312.3 s |
-| Total Thrust | 1,641,332 kN |
-| TWR (Max) | 1.24 (3.50) |
-| Δv Contribution | 3,172 m/s |
-| Burn Time (This Phase) | 2m 34s |
+It was designed to provide the initial thrust required to launch the Orion spacecraft as part of NASA’s Constellation Program.
 
-> This phase provides **maximum thrust dominance** during liftoff and early atmospheric ascent, at the cost of lower effective ISP due to solid propellant contribution.
+In the Apollo-XM-1L project, this booster serves as a conceptual architectural reference rather than a direct reproduction of the real Ares I performance specifications.
+
+### Total Vehicle Δv Comparison (Apollo-XM-1L-Stack)
+
+| Configuration | Booster Layout | Stage 1 Δv | Total Δv |
+|---------------|----------------|------------|----------|
+| v1.6 | 8 × 240% | 6,546 m/s | 22,162 m/s |
+| v1.7 | 16 Booster Units (2 × 150% each) | 6,783 m/s | 22,381 m/s |
+
+Note:
+Each booster unit consists of two 150% scaled solid motors mounted as a single structural pair.
+Separation events occur at the unit level (16 total), not per individual motor.
 
 ---
 
@@ -1114,26 +1219,55 @@ approximately 38% of Earth, significantly lowering static wheel and landing leg 
 
 > **Environment-corrected values (Mars atmosphere ≈ near-vacuum)**
 
+## Apollo-XM Surface Lander Variants  
+### Shared Propulsion Bus — Variant Payload Configurations
+
+Apollo-XM-1F and Apollo-XM-1L share the same descent propulsion architecture and structural platform.  
+The difference lies in payload mass and mission role.
+
+---
+
+# Common Propulsion System (XM-1 Bus)
+
+### Main Engines (Descent / Ascent Assist)
+
 | Parameter | Value |
-|---------|------|
-| Engine Type | Gemini **LR-91 Mini** Rocket Engine |
-| Engine Count | **6** |
+|------------|--------|
+| Engine Type | Gemini LR-91 Mini Rocket Engine |
+| Engine Count | 6 |
 | Propellant | Aerozine-50 / NTO |
 | Throttle Capability | Yes |
 | Restart Capability | Yes (multiple ignitions) |
 | Ullage Requirement | Yes |
+| Auto-Mobility | Yes |
 
-#### Performance (Mars)
+### Performance (Mars)
 
 | Parameter | Value |
-|---------|------|
-| Total Thrust (Mars ATM) | **≈ 956 kN** |
-| Total Thrust (Vacuum) | **≈ 960 kN** |
-| ISP (Mars ATM) | **≈ 321.5 s** |
-| ISP (Vacuum) | **≈ 323.0 s** |
-| Burn Time (full tanks) | **≈ 6 min 03 s** |
-| Total Δv (Mars) | **≈ 4,186 – 4,205 m/s** |
-| TWR on Mars (max) | **≈ 1.70** |
+|------------|--------|
+| Total Thrust (Mars ATM) | ≈ 956 kN |
+| Total Thrust (Vacuum) | ≈ 960 kN |
+| ISP (Mars ATM) | ≈ 321.5 s |
+| ISP (Vacuum) | ≈ 323.0 s |
+| Burn Time (full tanks) | ≈ 6 min |
+| TWR on Mars (max) | ≈ 1.70 |
+
+---
+
+# Variant Comparison
+
+| Parameter | XM-1F (Fuel Lander) | XM-1L (Life Support Lander) |
+|------------|---------------------|-----------------------------|
+| Role | Surface propellant depot | Life support & consumables |
+| Configuration | Uncrewed | Uncrewed |
+| Wet Mass | ≈ 149.9 t | ≈ 131.7 t |
+| Total Δv (Mars) | ≈ 4,186 – 4,205 m/s | ≈ 5,715 - 5,741 m/s |
+| Structural Role | Fuel storage | Habitable systems supply |
+
+Although both landers have similar wet mass, the XM-1L allocates internal volume and mass to life-support consumables instead of surface propellant reserves, slightly reducing available Δv.
+
+Mars gravity (~38% of Earth) significantly reduces effective landing loads for both configurations.
+
 
 ---
 
@@ -1146,3 +1280,192 @@ approximately 38% of Earth, significantly lowering static wheel and landing leg 
 - After landing, the vehicle becomes **permanent surface infrastructure**.
 
 This lander forms the **logistics foundation** of the Apollo-XM Mars architecture.
+
+---
+
+## Apollo-XM-1C — Crew Lander
+
+### Hardware Overview
+
+| Parameter        | Value |
+|-----------------|-------|
+| Role            | Crewed Mars landing and ascent vehicle |
+| Vehicle         | Apollo-XM-1C Crew Lander |
+| Configuration   | Crewed (3 seats), autonomous descent |
+| Wet Mass        | ~149.9 t (descent configuration) |
+| Power Systems   | Passive / fuel-cell supported |
+| Structural Role | Crewed surface lander with integrated ascent module |
+
+Unlike XM-1F (Fuel Lander), XM-1C carries crew accommodations and a fully integrated Ascent Mission Module (AMM).
+
+---
+
+## Propulsion System — Descent Phase
+
+### Main Engines (Descent)
+
+*Environment-corrected values (Mars atmosphere ≈ near-vacuum)*
+
+| Parameter | Value |
+|------------|--------|
+| Engine Type | Gemini LR-91 Mini Rocket Engine |
+| Engine Count | 6 |
+| Propellant | Aerozine-50 / NTO |
+| Throttle Capability | Yes |
+| Restart Capability | Yes (multiple ignitions) |
+| Ullage Requirement | Yes |
+
+### Performance (Mars)
+
+| Parameter | Value |
+|------------|--------|
+| Total Thrust (Mars ATM) | ≈ 956 kN |
+| ISP (Mars ATM) | ≈ 321.5 s |
+| Burn Time (full tanks) | ≈ 6 min |
+| Total Δv (Mars) | ≈ 4,186 – 4,205 m/s |
+| TWR on Mars (max) | ≈ 1.70 |
+
+Descent propulsion is identical in capability to XM-1F.
+
+---
+
+## Ascent Mission Module (AMM)
+
+### Main Engines (Ascent)
+
+| Parameter | Value |
+|------------|--------|
+| Engine Count | 4 |
+| Configuration | Dedicated ascent cluster |
+| Propellant | Aerozine-50 / NTO |
+| Throttle | Limited / mission-optimized |
+
+### Ascent Performance (Mars)
+
+| Parameter | Value |
+|------------|--------|
+| Total Δv (Mars Ascent) | ≈ 5,361 m/s |
+| Mission Role | Surface-to-Mars-Orbit crew return |
+
+The AMM provides independent ascent capability to rendezvous with the pre-positioned return vehicle (XM-2R).
+
+---
+
+### Mission Logic
+
+- XM-1F establishes propellant infrastructure.
+- XM-1L delivers life support and consumables.
+- XM-1C performs crewed descent and ascent.
+- XM-2R waits in Mars orbit for crew return.
+
+Apollo-XM architecture separates descent mass from ascent survivability, maximizing robustness while preserving mission redundancy.
+
+
+---
+
+## Apollo-XM-2R — Return Vehicle (Pre-Deployed to Mars Orbit)
+
+### Mission Role
+
+Apollo-XM-2R is injected to Mars orbit in advance of the crew mission.  
+It serves as the **Earth Return Vehicle (ERV)**, carrying:
+
+- Return propellant
+- Life support reserves for transit
+- Earth re-entry stack
+
+This architecture removes ascent-to-transit mass from the surface mission,
+dramatically improving crew safety margins.
+
+---
+
+## Hardware Overview
+
+| Parameter | Value |
+|------------|--------|
+| Role | Mars orbit return vehicle |
+| Configuration | Uncrewed pre-deployment |
+| Engine Type | RS-25 (Vacuum optimized) |
+| Engine Count | 1 per stage |
+| Stage Count | 2 |
+| Propellant | LH2 / LOX |
+| Power Systems | Passive / minimal orbital support |
+| Structural Role | Earth return propulsion stack |
+
+---
+
+## Propulsion System
+
+### Stage S2 — Mars Orbit Injection / Departure Stage
+
+| Parameter | Value |
+|------------|--------|
+| Vacuum ISP | ≈ 452 s |
+| Total Thrust | ≈ 2,279 kN |
+| Wet Mass | ≈ 146.8 t |
+| Dry Mass | ≈ 78.6 t |
+| Δv (Mars orbit) | ≈ 2,946 m/s |
+| Burn Time | ≈ 2 min 19 s |
+| TWR (Mars orbit) | ≈ 4.13 |
+
+This stage performs:
+- Trans-Earth Injection (TEI)
+- Major orbital corrections
+
+---
+
+### Stage S0 — Final Return / Injection Assist
+
+| Parameter | Value |
+|------------|--------|
+| Vacuum ISP | ≈ 452 s |
+| Total Thrust | ≈ 2,279 kN |
+| Wet Mass | ≈ 64.6 t |
+| Δv (vacuum) | ≈ 9,501 m/s |
+| Burn Time | ≈ 1 min 51 s |
+| TWR (Mars orbit) | ≈ 9.39 |
+
+This stage provides:
+- Final injection shaping
+- High-energy maneuver capability
+- Abort and contingency margin
+
+---
+
+## Total Propulsive Capability
+
+Combined Δv (usable mission stack):
+
+**≈ 2,946 m/s (primary stage)**  
+**≈ 9,501 m/s (upper stage capability envelope)**  
+
+This provides:
+
+- Mars orbit departure margin
+- Trajectory correction margin
+- Safe Earth return window flexibility
+
+---
+
+## Mission Architecture Logic
+
+Apollo-XM-2R is deployed **before crew arrival**, ensuring:
+
+- Return vehicle is confirmed operational in Mars orbit
+- No dependence on surface fuel production
+- Surface crew only needs to reach orbit
+
+This mirrors Apollo lunar logic:
+
+> “Return capability is guaranteed before descent.”
+
+---
+
+## Structural Philosophy
+
+- High Isp hydrogen architecture
+- Extremely high TWR margin in Mars orbit
+- Minimal structural mass overhead
+- Dedicated life-support mass allowance for return transit
+
+Apollo-XM-2R completes the closed-loop Mars mission architecture.
