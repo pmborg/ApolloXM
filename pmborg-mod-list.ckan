@@ -4,17 +4,13 @@
     "name": "installed-portable",
     "abstract": "A list of modules installed on the portable KSP instance",
     "author": "pmbor",
-    "version": "2026.02.09.09.00.40",
+    "version": "2026.02.21.05.28.15",
     "ksp_version_min": "1.8",
     "ksp_version_max": "1.12",
     "license": "unknown",
     "depends": [
         {
             "name": "B9PartSwitch",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "kOS",
             "suppress_recommendations": true
         },
         {
@@ -46,10 +42,6 @@
             "suppress_recommendations": true
         },
         {
-            "name": "KerbalEngineerRedux",
-            "suppress_recommendations": true
-        },
-        {
             "name": "SpaceXLegs",
             "suppress_recommendations": true
         },
@@ -58,11 +50,11 @@
             "suppress_recommendations": true
         },
         {
-            "name": "MechJeb2",
+            "name": "RSSTextures4096",
             "suppress_recommendations": true
         },
         {
-            "name": "RSSTextures4096",
+            "name": "RealFuels-Stock",
             "suppress_recommendations": true
         },
         {
@@ -75,6 +67,10 @@
         },
         {
             "name": "Scatterer-sunflare",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SmokeScreen",
             "suppress_recommendations": true
         },
         {
@@ -114,14 +110,6 @@
             "suppress_recommendations": true
         },
         {
-            "name": "ContractConfigurator",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "CraftManager",
-            "suppress_recommendations": true
-        },
-        {
             "name": "DockingPortAlignmentIndicator",
             "suppress_recommendations": true
         },
@@ -146,15 +134,7 @@
             "suppress_recommendations": true
         },
         {
-            "name": "FreeIva",
-            "suppress_recommendations": true
-        },
-        {
             "name": "FuelTanksPlus",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "Hangar",
             "suppress_recommendations": true
         },
         {
@@ -178,6 +158,10 @@
             "suppress_recommendations": true
         },
         {
+            "name": "KerbalEngineerRedux",
+            "suppress_recommendations": true
+        },
+        {
             "name": "KIS",
             "suppress_recommendations": true
         },
@@ -190,23 +174,15 @@
             "suppress_recommendations": true
         },
         {
-            "name": "kOS-KerbalEngineer",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "kOS-MechJeb2",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "KSCSwitcher",
-            "suppress_recommendations": true
-        },
-        {
             "name": "KSPBurst",
             "suppress_recommendations": true
         },
         {
             "name": "LunarTransferPlanner",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "MechJeb2",
             "suppress_recommendations": true
         },
         {
@@ -226,10 +202,6 @@
             "suppress_recommendations": true
         },
         {
-            "name": "PLUM",
-            "suppress_recommendations": true
-        },
-        {
             "name": "PartInfo",
             "suppress_recommendations": true
         },
@@ -242,6 +214,10 @@
             "suppress_recommendations": true
         },
         {
+            "name": "RealPlume",
+            "suppress_recommendations": true
+        },
+        {
             "name": "RealScaleBoosters",
             "suppress_recommendations": true
         },
@@ -251,14 +227,6 @@
         },
         {
             "name": "RealChute",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "RealFuels-Stock",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "Resurfaced",
             "suppress_recommendations": true
         },
         {
@@ -275,14 +243,6 @@
         },
         {
             "name": "Scatterer",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "ShipEffectsContinued",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "kOS-SpaceCore",
             "suppress_recommendations": true
         },
         {
@@ -334,6 +294,6 @@
             "suppress_recommendations": true
         }
     ],
-    "release_date": "2026-02-09T21:00:40.174386Z",
+    "release_date": "2026-02-21T17:28:15.8230277Z",
     "kind": "metapackage"
 }

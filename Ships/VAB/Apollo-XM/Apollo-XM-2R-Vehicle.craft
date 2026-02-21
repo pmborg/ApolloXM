@@ -2,7 +2,7 @@ ship = Apollo-XM-2R-Vehicle
 version = 1.12.5
 description = Use Raptors:¨- 3 seats¨- 10 days translunnar (life support)¨- 10 days at surface (life support)¨- Max Payload: 7t
 type = VAB
-size = 4.31022787,22.8581543,4.43654442
+size = 4.31022835,22.8581543,4.43654442
 steamPublishedFileId = 0
 persistentId = 3075765726
 rot = 0,0,0,0
@@ -12,7 +12,7 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = Scale_Redist=2.4.8|ModuleManager=4.2.3|000_AT_Utils=1.10.1|001_AnisotropicPartResizer=1.5.0|002_MultiAnimators=1.2.1|0_00_AT_Utils_UI=1.0.0|CC.UI=1.0.0|ConfigurableContainers=2.6.2|SubmodelResizer=1.0.0|ClickThroughBlocker=2.1.10|FilterExtensions=3.2.9|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|KSPBurst=1.5.5|Microsoft.Extensions.FileSystemGlobbing=6.0.21|System.IO.Compression=4.6.57|System.IO.Compression.FileSystem=4.6.57|System.Runtime.CompilerServices.Unsafe=4.700.20|System.Runtime=4.0.0|Unity.Burst=0.0.0|Unity.Burst.Unsafe=1.0.0|Unity.Collections=0.0.0|Unity.Jobs=0.0.0|Unity.Mathematics=1.0.0|BlendshapeModelLoader=1.6.4|TexturesUnlimited=1.6.4|USITools=1.0.0|USIToolsUI=1.0.0|ToolbarControl=0.1.9|KSPe.Light.Recall=2.5.2|Attached=0.5.0|AttachedOnEditor=0.5.0|ChillingOut=0.5.0|Driftless=0.5.0|KSP-Recall=0.5.0|Refunding=0.5.0|Resourceful=0.5.0|AnimatedDecouplers=1.4.2|AntennaHelper=1.0.7|B9PartSwitch=2.21.0|BDAnimationModules=0.6.7|RNModules=1.2.1|BetterCrewAssignment=0.0.0|BDB=1.14.0|CCK=5.1.0|ContractConfigurator=2.12.0|KXAPI=1.0.0|CraftManager=1.0.7240|KatLib=1.0.7240|SimpleBoiloff=0.2.1|DeployableEngines=2.2.0|DMModuleScienceAnimateGeneric=0.23.0|DraggableNavball=0.0.0|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FMRSContinued=1.2.9|FreeIva=0.2.20|PLUM=1.1.4|HangerExtenderExtended=3.6.1|Hangar=3.6.2|HullcamVDSContinued=0.2.2|Jettison=1.3.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalJointReinforcement=3.8.6|DeployableAeroSurfaces=1.0.0|KIS=1.29.8039|KSPDev_Utils.2.6=2.6.7847|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|SharpDX=4.2.0|SharpDX.DXGI=4.2.0|SharpDX.Direct3D11=4.2.0|KSPTextureLoader=0.0.22|Kopernicus=1.12.235|ICSharpCode.SharpZipLib=0.86.0|kOS=1.2.1|kOS.Safe=1.2.1|kOS-KerbalEngineer=0.1.1|kOS.MechJeb2.Addon=0.0.4|KSCSwitcher=2.2.0|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|LunarTransferPlanner=0.0.0|alglib=1.0.0|MechJeb2=2.15.1|MechJebLib=1.0.0|MechJebLibBindings=1.0.0|DockingPortAlignmentIndicator=6.12.0|DPAI_RPM=1.0.0|ModuleDockingNodeNamed=1.1.0|NFPropUtils=1.0.0|NearFutureSolar=0.4.0|NeptuneCamera=1.0.0|PartInfo=0.0.8|PatchManager=0.0.17|Pmborg-RealFalcons=1.0.0|ROUtils=1.1.1|ProceduralParts=2.8.0|RealChute=1.4.9059|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|RecoveryController=0.0.4|AmpYear=1.5.9|BackgroundResources=1.12.0|RetractableLiftingSurface=0.2.1|ROLib=2.0.0|RSSTimeFormatter=1.12.0|scatterer=0.878.0|Shabby=0.4.2|ShipEffectsContinued=1.0.13|SimpleAdjustableFairings=1.12.0|KSP_Log=1.2.0|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|SystemHeat=0.1.0|TextureReplacer=4.5.3|TacLifeSupport=0.18.0|Trajectories=2.4.5|KerbalAlarmClock=3.14.0|TransferWindowPlanner=1.8.0|ControlActionGroup=1.0.0|HabUtils=1.0.0|SootyShaderLoader=1.0.0|KSPe.Light.TweakScale=2.5.4|Scale=2.4.8|TweakScale.WatchDog=2.4.8|TweakScaleCompanion=2025.12.12|TweakScaleCompanion_Frameworks=0.4.0|TweakScalerTestFlightCore=0.4.0|TweakScalerWaterfallFX=0.4.0|TweakScaleCompanion_FS=1.3.0|TweakScalerFSBuoyancy=1.3.0|TweakScaleCompanion_KIAS=1.1.0|TweakScalerKISInventory=1.1.0|TweakScaleCompanion_PKMC=2.2.1|ZeroMiniAVC=1.1.3
+_modVersions = Scale_Redist=2.4.8|ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|FilterExtensions=3.2.9|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|KSPBurst=1.5.5|Microsoft.Extensions.FileSystemGlobbing=6.0.21|System.IO.Compression=4.6.57|System.IO.Compression.FileSystem=4.6.57|System.Runtime.CompilerServices.Unsafe=4.700.20|System.Runtime=4.0.0|Unity.Burst=0.0.0|Unity.Burst.Unsafe=1.0.0|Unity.Collections=0.0.0|Unity.Jobs=0.0.0|Unity.Mathematics=1.0.0|BlendshapeModelLoader=1.6.4|TexturesUnlimited=1.6.4|USITools=1.0.0|USIToolsUI=1.0.0|ToolbarControl=0.1.9|KSPe.Light.Recall=2.5.2|Attached=0.5.0|AttachedOnEditor=0.5.0|ChillingOut=0.5.0|Driftless=0.5.0|KSP-Recall=0.5.0|Refunding=0.5.0|Resourceful=0.5.0|AnimatedDecouplers=1.4.2|AntennaHelper=1.0.7|B9PartSwitch=2.21.0|BDAnimationModules=0.6.7|RNModules=1.2.1|BetterCrewAssignment=0.0.0|BDB=1.14.0|CCK=5.1.0|SimpleBoiloff=0.2.1|DeployableEngines=2.2.0|DMModuleScienceAnimateGeneric=0.23.0|DraggableNavball=0.0.0|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FMRSContinued=1.2.9|HangerExtenderExtended=3.6.1|HullcamVDSContinued=0.2.2|Jettison=1.3.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalJointReinforcement=3.8.6|DeployableAeroSurfaces=1.0.0|KIS=1.29.8039|KSPDev_Utils.2.6=2.6.7847|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|SharpDX=4.2.0|SharpDX.DXGI=4.2.0|SharpDX.Direct3D11=4.2.0|KSPTextureLoader=0.0.22|Kopernicus=1.12.238|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.40.1|LunarTransferPlanner=0.0.0|alglib=1.0.0|MechJeb2=2.15.1|MechJebLib=1.0.0|MechJebLibBindings=1.0.0|DockingPortAlignmentIndicator=6.12.0|DPAI_RPM=1.0.0|ModuleDockingNodeNamed=1.1.0|NFPropUtils=1.0.0|NearFutureSolar=0.4.0|NeptuneCamera=1.0.0|PartInfo=0.0.8|PatchManager=0.0.17|Pmborg-RealFalcons=1.0.0|ROUtils=1.1.1|ProceduralParts=2.8.0|RealChute=1.4.9059|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|RecoveryController=0.0.4|AmpYear=1.5.9|BackgroundResources=1.12.0|RetractableLiftingSurface=0.2.1|ROLib=2.0.0|RSSTimeFormatter=1.12.0|scatterer=0.878.0|SimpleAdjustableFairings=1.12.0|SmokeScreen=2.8.14|KSP_Log=1.2.0|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|SystemHeat=0.1.0|TextureReplacer=4.5.3|TacLifeSupport=0.18.0|Trajectories=2.4.5|KerbalAlarmClock=3.14.0|TransferWindowPlanner=1.8.0|ControlActionGroup=1.0.0|HabUtils=1.0.0|SootyShaderLoader=1.0.0|KSPe.Light.TweakScale=2.5.4|Scale=2.4.8|TweakScale.WatchDog=2.4.8|TweakScaleCompanion=2025.12.12|TweakScaleCompanion_Frameworks=0.4.0|TweakScalerTestFlightCore=0.4.0|TweakScalerWaterfallFX=0.4.0|TweakScaleCompanion_FS=1.3.0|TweakScalerFSBuoyancy=1.3.0|TweakScaleCompanion_KIAS=1.1.0|TweakScalerKISInventory=1.1.0|TweakScaleCompanion_PKMC=2.2.1|Waterfall=0.10.2|ZeroMiniAVC=1.1.3
 PART
 {
 	part = dockingPort3_4291974886
@@ -1410,28 +1410,10 @@ PART
 			{
 				PrtName = bluedog.Delta.Avionics
 				PrtTitle = Daleth-P/K Avionics Core
-				PrtModuleName = ModuleCommand
+				PrtModuleName = ModuleDataTransmitter
 				PrtSubsystem = False
-				PrtPower = 0.012
-				PrtPowerF = 0.0120000001
-				PrtActive = True
-				PrtSolarDependant = False
-				PrtEditorInclude = True
-				PrtUserEditorInclude = True
-				PrtValidprtEmergShutDn = False
-				PrtEmergShutDnInclude = False
-				PrtPreEmergShutDnStateActive = True
-				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4291062970,ModuleCommand
-			}
-			AYPwrPartList
-			{
-				PrtName = AmpYear SubSystems-Max
-				PrtTitle = AmpYear SubSystems-Max
-				PrtModuleName = SAS
-				PrtSubsystem = True
-				PrtPower = 0
-				PrtPowerF = 0
+				PrtPower = 3
+				PrtPowerF = 3
 				PrtActive = True
 				PrtSolarDependant = False
 				PrtEditorInclude = True
@@ -1440,25 +1422,7 @@ PART
 				PrtEmergShutDnInclude = True
 				PrtPreEmergShutDnStateActive = True
 				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4291062970,SAS
-			}
-			AYPwrPartList
-			{
-				PrtName = bluedog.Delta.Avionics
-				PrtTitle = Daleth-P/K Avionics Core
-				PrtModuleName = ModuleReactionWheel
-				PrtSubsystem = False
-				PrtPower = 0.03
-				PrtPowerF = 0.0299999993
-				PrtActive = True
-				PrtSolarDependant = False
-				PrtEditorInclude = True
-				PrtUserEditorInclude = True
-				PrtValidprtEmergShutDn = True
-				PrtEmergShutDnInclude = True
-				PrtPreEmergShutDnStateActive = True
-				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4291062970,ModuleReactionWheel
+				ConsPartKey = 4291062970,ModuleDataTransmitter
 			}
 			AYPwrPartList
 			{
@@ -1482,10 +1446,10 @@ PART
 			{
 				PrtName = bluedog.Delta.Avionics
 				PrtTitle = Daleth-P/K Avionics Core
-				PrtModuleName = ModuleDataTransmitter
+				PrtModuleName = ModuleReactionWheel
 				PrtSubsystem = False
-				PrtPower = 3
-				PrtPowerF = 3
+				PrtPower = 0.03
+				PrtPowerF = 0.0299999993
 				PrtActive = True
 				PrtSolarDependant = False
 				PrtEditorInclude = True
@@ -1494,7 +1458,43 @@ PART
 				PrtEmergShutDnInclude = True
 				PrtPreEmergShutDnStateActive = True
 				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4291062970,ModuleDataTransmitter
+				ConsPartKey = 4291062970,ModuleReactionWheel
+			}
+			AYPwrPartList
+			{
+				PrtName = AmpYear SubSystems-Max
+				PrtTitle = AmpYear SubSystems-Max
+				PrtModuleName = SAS
+				PrtSubsystem = True
+				PrtPower = 0
+				PrtPowerF = 0
+				PrtActive = True
+				PrtSolarDependant = False
+				PrtEditorInclude = True
+				PrtUserEditorInclude = True
+				PrtValidprtEmergShutDn = True
+				PrtEmergShutDnInclude = True
+				PrtPreEmergShutDnStateActive = True
+				PrtEmergShutDnPriority = 2
+				ConsPartKey = 4291062970,SAS
+			}
+			AYPwrPartList
+			{
+				PrtName = bluedog.Delta.Avionics
+				PrtTitle = Daleth-P/K Avionics Core
+				PrtModuleName = ModuleCommand
+				PrtSubsystem = False
+				PrtPower = 0.012
+				PrtPowerF = 0.0120000001
+				PrtActive = True
+				PrtSolarDependant = False
+				PrtEditorInclude = True
+				PrtUserEditorInclude = True
+				PrtValidprtEmergShutDn = False
+				PrtEmergShutDnInclude = False
+				PrtPreEmergShutDnStateActive = True
+				PrtEmergShutDnPriority = 2
+				ConsPartKey = 4291062970,ModuleCommand
 			}
 		}
 		UPGRADESAPPLIED
@@ -4990,7 +4990,7 @@ PART
 	part = bluedog.RTG.MHWRTG_4284575034
 	partName = Part
 	persistentId = 725993439
-	pos = 1.4210155,102.169075,-7.61960411
+	pos = 1.42101502,102.169075,-7.61960411
 	attPos = 0,0,0
 	attPos0 = -0.116219454,-3.214849,1.73421574
 	rot = 1,-1.05911699E-13,0,3.38813179E-21
@@ -5256,7 +5256,7 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.4210155, 102.169075, -7.61960411)
+		originalPos = (1.42101526, 102.169075, -7.61960411)
 		originalRotation = (1, -1.05911699E-13, 0, 3.38813179E-21)
 		moduleVersion = 6
 		stagingEnabled = True
@@ -5303,7 +5303,7 @@ PART
 	pos = -0.196982026,102.169075,-9.47004223
 	attPos = 0,0,0
 	attPos0 = 1.73421574,-3.214849,0.116220236
-	rot = 0.707106769,-7.48908856E-14,-0.707106769,7.48908856E-14
+	rot = 0.707106769,-7.48908856E-14,-0.707106769,7.48908924E-14
 	attRot = 0,0,0,1
 	attRot0 = -1,1.05911685E-13,1.78813934E-07,-2.03287907E-20
 	mir = 1,1,1
@@ -5567,7 +5567,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (-0.196982026, 102.169075, -9.47004223)
-		originalRotation = (0.707106769, -7.48908856E-14, -0.707106769, 7.48908856E-14)
+		originalRotation = (0.707106769, -7.48908856E-14, -0.707106769, 7.48908924E-14)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -5610,10 +5610,10 @@ PART
 	part = bluedog.RTG.MHWRTG_4284574496
 	partName = Part
 	persistentId = 3042925916
-	pos = -2.04742193,102.169075,-7.8520422
+	pos = -2.04742146,102.169075,-7.8520422
 	attPos = 0,0,0
 	attPos0 = 0.116219454,-3.214849,-1.73421574
-	rot = -5.96046448E-08,0,-0.99999994,1.05911685E-13
+	rot = -5.96046448E-08,-3.38813179E-21,-0.99999994,1.05911685E-13
 	attRot = 0,0,0,1
 	attRot0 = -0.70710659,7.48908449E-14,0.707106948,-7.4890872E-14
 	mir = 1,1,1
@@ -5876,7 +5876,7 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-2.04742193, 102.169075, -7.8520422)
+		originalPos = (-2.04742169, 102.169075, -7.8520422)
 		originalRotation = (-5.96046448E-08, 0, -0.99999994, 1.05911685E-13)
 		moduleVersion = 6
 		stagingEnabled = True
@@ -5923,7 +5923,7 @@ PART
 	pos = -0.429424644,102.169075,-6.00160408
 	attPos = 0,0,0
 	attPos0 = -1.73421574,-3.214849,-0.116220236
-	rot = -0.707106769,7.48908856E-14,-0.707106769,7.48908856E-14
+	rot = -0.707106769,7.48908924E-14,-0.707106769,7.48908856E-14
 	attRot = 0,0,0,1
 	attRot0 = 1.78813934E-07,-2.03287907E-20,1,-1.05911685E-13
 	mir = 1,1,1
@@ -6187,7 +6187,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (-0.429424644, 102.169075, -6.00160408)
-		originalRotation = (-0.707106769, 7.48908856E-14, -0.707106769, 7.48908856E-14)
+		originalRotation = (-0.707106769, 7.48908924E-14, -0.707106769, 7.48908856E-14)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
